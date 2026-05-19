@@ -1,0 +1,37 @@
+{
+  "name": "simulador-testes-de-carga",
+  "version": "1.0.0",
+  "description": "Simulador de Testes de Carga - Ferramenta CLI para estressar APIs e medir resiliência de servidores",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "load-tester": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "load-testing",
+    "stress-test",
+    "benchmark",
+    "sre",
+    "devops",
+    "cli"
+  ],
+  "author": "L-A-Leandro",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/yargs": "^17.0.35",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "dependencies": {
+    "yargs": "^17.7.2"
+  }
+}
